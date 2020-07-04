@@ -94,22 +94,27 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+@font-face{
+  font-family:'SteelTongs';
+  src:url('../fonts/SteelTongs.ttf');
+}
 html {
-  background-color: #fff;
+  background-color: #edb131;
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Futura', sans-serif;
   padding: 0 2em;
-  font-size: 1.25em;
+  font-size: 1.10em;
   height: 100%;
   color: #fff;
 }
 
-header,
+  
+
+
 footer {
   background-color: #222;
   height: 80px;
@@ -117,17 +122,47 @@ footer {
   display:flex;
   justify-content:center;
   align-items:center;
+ 
 }
 
 main {
-  background-color: #ccc;
+  background-color: #edb131;
   height: 250px;
   width: 100%;
   display:flex;
   justify-content:center;
-  align-items:center;
+  border-bottom: 1px solid #fff;
+ 
+  
   
 }
+
+
+header h1 {
+  font-family:'SteelTongs';
+  font-weight:100;
+  font-size:3em;
+  justify-content:flex-start;
+  padding-left:20px;
+}
+
+main h2 {
+  display:flex;
+  font-family:'American Typewriter', serif;
+  font-weight:lighter;
+  font-size:1em;
+  line-height:1.5em;
+  align-items:flex-end;
+  justify-content:flex-end;
+  
+}
+
+main h1 .intro span{
+  justify-content:flex-start;
+}
+ .intro{
+  font-size:1em;
+ }
 
 header,
 footer,
@@ -140,24 +175,27 @@ main {
 .flex-container {
   display:flex;
   justify-content:center;
-  align-items:center;
+ 
   flex-flow:row wrap;
   justify-content:space-between;
+  width:100%;
   
 
 }
 
 .flex-items {
-  color: #fff;
+  color: #000;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1em;
   width: 30%;
-  height: 200px;
+  height: 350px;
   display:flex;
-  display-content:center;
+  justify-content:center:
   align-items:center;
+  padding: 0 2px;
 }
+
+
 
 /* ==========================================================================
    Helper classes
